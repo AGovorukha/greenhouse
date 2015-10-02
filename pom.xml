@@ -654,13 +654,17 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	<distributionManagement>
-		<!-- Temporary until we have a need to publish to a remote release repository -->
-		<snapshotRepository>
-			<id>localPublish</id>
-			<name>localPublish</name>
-			<url>file://${user.home}/local-maven-publish-repository</url>
-		</snapshotRepository>
-	</distributionManagement>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>Artifactory</name></name>
+        <url>http://192.168.33.13:8081/artifactory/ext-snapshot-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>Artifactory</name>
+        <url>http://192.168.33.13:8081/artifactory/ext-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
