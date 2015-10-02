@@ -684,7 +684,7 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-        <name>Artifactory</name></name>
+        <name>Artifactory</name>
         <url>http://192.168.33.13:8081/artifactory/ext-snapshot-local</url>
     </repository>
     <snapshotRepository>
